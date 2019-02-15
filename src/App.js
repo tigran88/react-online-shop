@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import './styles/tailwind.css';
 import './App.css';
 
+import Layout from './containers/Layout/Layout';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-          <div className="bg-indigo-darker text-grey-lightest p-5">
-              test
-          </div>
-      </div>
+        <Layout>
+            <p>test</p>
+        </Layout>
     );
   }
 }
