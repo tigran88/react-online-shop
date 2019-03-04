@@ -1,11 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const navMenuItem = (props) => {
   return (
       <li className="ml-3">
-          <a href="#" className="text-grey-lightest no-underline hover:underline">
-              {props.children}
-          </a>
+          <NavLink to={ props.to } activeClassName="" exact className="text-grey-lightest no-underline hover:underline">
+              { props.children }
+          </NavLink>
       </li>
   )
 };

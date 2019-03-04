@@ -8,8 +8,9 @@ const navbar = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <div>Logo</div>
                 <ul className="flex list-reset">
-                    <NavMenuItem>Home</NavMenuItem>
-                    <NavMenuItem>About</NavMenuItem>
+                    <NavMenuItem to="/">Home</NavMenuItem>
+                    <NavMenuItem to="/products">Products</NavMenuItem>
+                    <NavMenuItem to="/cart">Cart</NavMenuItem>
                 </ul>
             </div>
         </nav>
